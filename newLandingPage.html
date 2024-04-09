@@ -1,0 +1,151 @@
+<html>
+    <head>
+         <title>Landing Page</title>
+        
+         <link rel="stylesheet" href="newland.css">
+        
+         
+         
+         
+    </head>
+ 
+      <nav>
+       
+        <a href="newLandingPage.html" class="active">Home</a>               
+        <a href="#topic4" id="button4">About Us</a>
+        <a href="#topic3" id="button3">Services</a>
+      </nav>
+
+     
+
+      <section style="background-color: black;">
+        
+      <div>
+        <img src="image/buil.jpg" class="homepic" id="home-pic">
+      </div>
+      <img src="image/logo.jpeg" alt="Your Logo" class="logo">
+      <p  style="float: left; color: aliceblue; font-size: 25px;">OARI CONSTRUCTION <br> &nbump; Dream, Design & Build</p>
+    
+      <div class="text-container">
+       
+        <h1>Build Your Dreams, Brick by Brick. <br>
+        We Provide the Blueprint and the Blocks.</h1>
+        
+      </div>
+
+      
+      
+      
+    </section>
+    <body >  
+    <section class="container">
+      <img src="image/draw2home.gif" alt="Image Description" class="image">
+      <div class="text-box">
+        <h2 class="sub">Drawings</h2>
+        <p class="des">The cornerstone of any successful construction project is a well-defined blueprint.  These aren't just ordinary drawings – they're the detailed roadmap guiding every step, from the foundation to the final flourish. Construction drawings are the language of builders, architects, and engineers, a visual symphony that translates dreams into reality. Imagine towering skyscrapers rising from meticulously planned grids, intricate plumbing systems flowing flawlessly based on precise schematics, or entire communities taking shape according to detailed layouts. This is the power of construction drawings – the silent conductor orchestrating the entire construction ballet.</p>
+        <a href="login.html"><button>Click Me!</button></a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="text-box">
+        <h2 class="sub">Materials</h2>
+        <p class="des">The foundation of every structure, from towering skyscrapers to cozy homes, lies in the selection of the right materials. In the construction field, these materials become the building blocks that transform dreams into reality. They are more than just bricks and mortar; they are the innovators that shape our environment, offering strength, flexibility, and sustainability. From the gleaming steel that defines modern skylines to the resilient concrete that withstands the test of time, construction materials are a fascinating blend of science and artistry. Understanding their properties, applications, and environmental impact is key to creating structures that are not only aesthetically pleasing but also safe, durable, and efficient. So, delve into the world of construction materials, and discover how these silent partners play a crucial role in shaping the world around us.</p>
+         <a href="login2.html"><button>Click Me!</button></a>
+      </div>
+      <img src="image/material.gif" alt="Image Description" class="image">
+     
+    </section>
+
+    <section class="container">
+      <img src="image/vehicle.gif" alt="Image Description" class="image">
+      <div class="text-box">
+        <h2 class="sub">Vehicles</h2>
+        <p class="des">The foundation of every structure, from towering skyscrapers to cozy homes, lies in the selection of the right materials. In the construction field, these materials become the building blocks that transform dreams into reality. They are more than just bricks and mortar; they are the innovators that shape our environment, offering strength, flexibility, and sustainability. From the gleaming steel that defines modern skylines to the resilient concrete that withstands the test of time, construction materials are a fascinating blend of science and artistry. Understanding their properties, applications, and environmental impact is key to creating structures that are not only aesthetically pleasing but also safe, durable, and efficient. So, delve into the world of construction materials, and discover how these silent partners play a crucial role in shaping the world around us.</p>
+         <a href="veihcle.php"><button>Click Me!</button></a>
+      </div>
+     
+     
+    </section>
+<br>
+    <section class="head" id="topic3"><br>
+      <h2 style="color: gold;">Our Services</h2>
+      <p>We provide a variety of services to meet your needs.</p>
+    </section>
+    <section class="services" id="section2">
+      <div class="service-card" >
+        <a href="login.html"><img src="image/drawi.jpeg" alt="Service 1 Icon"></a>
+        <a href="login.html"><h3>Provide Drawings</h3></a>
+        
+      </div>
+      <div class="service-card" >
+        <a href="login2.html"><img src="image/mat.jpeg" alt="Service 2 Icon"></a>
+        <a href="login2.html"><h3>Provide Material</h3></a>
+       
+      </div>
+      <div class="service-card" >
+        <a href="veihcle.php"><img src="image/veihle.jpeg" alt="Service 3 Icon"></a>
+        <a href="veihcle.php"><h3>Provide Construction Vehicles</h3></a> 
+       
+      </div>
+    </section>
+
+
+    
+   
+              <section id="topic4">
+            <h2 style="color: gold; font-size: 50px; text-align: center;">About Us</h2>
+           
+
+            <img src="image/logo.jpeg" class="logo">
+            <div style="background-color: black; color: aliceblue; "><br>
+              <h2 style="color: antiquewhite; text-align: left;">Oari Construction (Pvt) Ltd</h2>
+              
+
+                <p style="color: rgb(74, 200, 188); font-size: 20px; padding-bottom: 20px; padding-top: 30px; padding-left: 10px;">To be the premier provider of innovative, sustainable, 
+                    and high-quality construction solutions, shaping environments that inspire and endure for generations to come.
+                   
+
+                    <br>Our mission is to deliver exceptional construction services with integrity, professionalism, 
+                      and excellence. We strive to exceed client expectations by fostering collaborative relationships, 
+                      embracing cutting-edge technologies, and prioritizing safety and environmental sustainability in every project we undertake.</p>
+               
+                      <p style="font-size: 20px;  text-align: right;">Contact Number: 076 - 56 87 543</p>
+              <p style="font-size: 20px;  text-align: right;">Email : oaricon08@gmail.com</p>
+                    </div>
+              </section>
+
+                <footer>
+                  <p class="footer">&copy; OARI 2024</p>
+                </footer>
+
+
+                         
+                <script>
+
+                  document.getElementById("button3").addEventListener("click", function() {
+                  document.getElementById("topic3").scrollIntoView();
+                  });
+
+                  document.getElementById("button4").addEventListener("click", function() {
+                  document.getElementById("topic4").scrollIntoView();
+                  });
+
+                  const imageElement = document.getElementById("home-pic"); 
+                  const imageUrls = ["image/buil.jpg", "image/dra.jpg", "image/builddraw.jpg", "image/co2.jpg"];
+                  let currentImageIndex = 0;
+              
+                  function changeImage() {
+                    currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+                    imageElement.src = imageUrls[currentImageIndex];
+                  }
+              
+                  setInterval(changeImage, 1000); 
+
+                  
+
+                </script>
+
+              </body>
+</html>
+            

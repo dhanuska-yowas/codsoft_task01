@@ -1,0 +1,42 @@
+.image-gallery {
+  display: flex; 
+  flex-wrap: wrap; 
+  margin: 0 auto; 
+}
+
+.image-container {
+  margin: 30px; 
+  position: relative; 
+}
+
+.image-container img {
+  width: 200px; 
+  height: 200px; 
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  background-color: transparent; 
+  color: white; 
+  padding: 5px 10px; 
+  border: none; 
+  cursor: pointer; 
+  opacity: 0.7; 
+  background-color: black;
+}
+
+.image-container:hover .arrow-button {
+  opacity: 1; 
+}
+
+.arrow-button.prev {
+  left: 0;
+  
+}
+
+.arrow-button.next {
+  right: 0; 
+  
+}

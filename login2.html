@@ -1,0 +1,118 @@
+<?php 
+session_start();
+
+if(isset($_SESSION['username'])){
+    header("Location:drawing.php");
+    exit();
+}
+
+if(isset($_POST['login'])){
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+
+    if($username==='username' && $password==='password'){
+        $_SESSION['username']=$username;
+
+        header("Location:drawings.php");
+        exit();
+
+    }else{
+        $error="Invalid username or password";
+    }
+}
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #ffffff;
+     
+      
+    }
+    .login-form {
+      padding: 20px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      background-color: #0e7081;
+      width: 400px;  
+      height: 300px; 
+      margin: 0 auto;  
+      padding: 20px;
+      text-align: center;
+      color: aliceblue;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .input-field {
+      margin-bottom: 15px;
+    }
+    .input-field{
+      display: block;
+      margin-bottom: 5px;
+      
+    }
+
+    label{
+        text-align: left;
+        display: block;
+      margin-bottom: 5px;
+      color: aliceblue;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+
+  .button{
+    color: rgb(8, 94, 128);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  </style>
+</head>
+<body>
+    <?php 
+    if(isset($error)){  ?>
+
+    <p>
+        <?php echo $error; ?>
+    </p>
+    <?php
+    }?>
+
+  
+  <div class="login-form">
+    
+    <img src="image/user.jpeg" class="img">
+    <h1>User Login</h1>
+    <form     method="POST" action="material2.html" >  
+      <div class="input-field">
+        <label for="username">Email:</label>
+        <input type="email" id="username" name="username" required>
+      </div>
+      <div class="input-field">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+   
+     
+        <a href="material2.html"> <button type="submit" class="button" id="login">Login</button></a>
+        <a href="signup2.html"><p style="color: aliceblue;">Create New Account</p></a>
+        
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Materials</title>
+  <style>
+    .products {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+      margin: 10px;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      width: 25%;
+      background-color: #ffffff;
+    }
+
+    .product-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .product-details, .buy-button {
+      margin: 5px 0;
+    }
+
+    .buy-button {
+      background-color: #007bff;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    body{
+        background-color: #000000;
+    }
+
+    h1{
+      color: gold;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Construction Materials</h1>
+
+  <div class="products">
+    <div class="product-card">
+      <img src="image/metal.jpg" alt="Product 1" onclick="openProductDetails('metal.html')">
+      <p class="product-name">Metal [Cube 1]</p>
+      <p class="product-price">Rs.20000.00</p>
+      <button class="product-details" onclick="openProductDetails('metal.html')">View Details</button>
+      <button class="buy-button" onclick="openPaymentPage('payment.html')">Buy Now</button>
+      
+    </div>
+
+    <div class="product-card">
+        <img src="image/bricks.jpeg" alt="Product 1" onclick="openProductDetails('bricks.html')">
+        <p class="product-name">Brick [large]</p>
+        <p class="product-price">Rs.38.00</p>
+        <button class="product-details" onclick="openProductDetails('bricks.html')">View Details</button>
+        <button class="buy-button" onclick="openPaymentPage('payment.html')">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/blackcement.jpg" alt="Product 1" onclick="openProductDetails('blackcement.html')">
+        <p class="product-name">black Cement 1kg</p>
+        <p class="product-price">Rs.1,620.00</p>
+        <button class="product-details" onclick="openProductDetails('blackcement.html')">View Details</button>
+        <button class="buy-button" onclick="openPaymentPage('payment.html')">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/tokyocement.png" alt="Product 1" onclick="openProductDetails('tokyocement.html')">
+        <p class="product-name">Tokyo Cement 50kg Bag</p>
+        <p class="product-price">Rs.2,600.00</p>
+        <button class="product-details" onclick="openProductDetails('tokyocement.html')">View Details</button>
+        <button class="buy-button" onclick="openPaymentPage('payment.html')">Buy Now</button>
+      </div>
+
+      
+      <div class="product-card">
+        <img src="image/sand.jpg" alt="Product 1" onclick="openProductDetails('sand.html')">
+        <p class="product-name">Sand [Cube 1]</p>
+        <p class="product-price">Rs.30000.00</p>
+        <button class="product-details" onclick="openProductDetails('tokyocement.html')">View Details</button>
+        <button class="buy-button" onclick="openPaymentPage('payment.html')">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/cementbricks.jpeg" alt="Product 1" onclick="openProductDetails('cementbricks.html')">
+        <p class="product-name">Cement Brick</p>
+        <p class="product-price">Rs.105.00</p>
+        <button class="product-details" onclick="openProductDetails('tokyocement.html')">View Details</button>
+        <button class="buy-button" onclick="openPaymentPage('payment.html')">Buy Now</button>
+      </div>
+
+    </div>
+
+  <script>
+    function openProductDetails(filename) {
+      window.location.href = filename;
+    }
+
+    function openPaymentPage(filename) {
+      window.location.href = filename;
+    }
+  </script>
+</body>
+</html>
